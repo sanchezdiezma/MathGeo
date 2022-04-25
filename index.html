@@ -27,25 +27,31 @@
         </nav>
     </header>
     <main>
+        <!-- Cuadrado -->
         <section class="calc-container">
             <figure class="calc-box"></figure>
             <h2>Cuadrado</h2>
             <section class="form-container">
-                <form action="">
-                    <input id="InputCuadrado" class="form-container-input" type="number">
-                    <button type="button" onclick="calcularPerimetroCuadrado()" class="form-container-button"
-                        type="button">Perimetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()" class="form-container-button"
-                        type="button">Área</button>
+                <form class="form-container-form" action="">
+                    <input placeholder="Introduce un lado" id="ladocuadrado" class="form-container-input" type="number">
+                    <button type="button" onclick="calcularCuadrado()" class="form-container-button"
+                        type="button">Calcular</button>
                 </form>
+                <div class="results">
+                    <h3>Perímetro: <span id="perimetroCuadrado" class="results-value"></span></h3>
+                    <h3>Area: <span id="areaCuadrado" class="results-value"></span></h3>
+                </div>
             </section>
-        </section>
+            </section>
+                   
+                    
+        <!-- Triangulo -->
         <section class="calc-container">
             <figure class="calc-triangle"></figure>
             <h2>Triangulo</h2>
             <section class="form-container">
                 <form action="">
-                    <input id="InputCuadrado" class="form-container-input" type="number">
+                    <input id="Cuadrado" class="form-container-input" type="number">
                     <button type="button" onclick="calcularPerimetroCuadrado()" class="form-container-button"
                         type="button">Perimetro</button>
                     <button type="button" onclick="calcularAreaCuadrado()" class="form-container-button"
@@ -53,6 +59,7 @@
                 </form>
             </section>
         </section>
+        <!-- Circulo -->
         <section class="calc-container">
             <figure class="calc-circle"></figure>
             <h2>Circulo</h2>

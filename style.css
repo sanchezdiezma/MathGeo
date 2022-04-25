@@ -91,22 +91,52 @@ nav h1 {
 }
 
 .form-container {
-    display: flex;
+    
     padding: 20px;
 }
 
+.form-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 .form-container .form-container-input {
-    border: 2px solid #013256;
-    border-radius: 5px;
+    border: 4px solid #013256;
+    background: none;
+    border-radius: 10px;
     padding: 10px;
+    margin: 10px;
+    width: 300px;
+
+   
 }
 
 .form-container .form-container-button {
-    border: 2px solid #013256;
-    border-radius: 5px;
+    border: 4px solid #013256;
+    background: none;
+    border-radius: 10px;
+    width: 300px;
     padding: 10px;
     cursor: pointer;
 }
+
+.results {
+    margin-top: 1.8rem;
+    border: 1px solid #013256;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.results h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+    
+    
    
 
 
