@@ -1,45 +1,49 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
-}
-
-body {
     background-color: #013256;
     font-family: 'Roboto Mono',
     monospace;
+    
+}
+
+body {
     margin: 10px;
 }
 
-nav {
+header nav {
+    padding: 2rem;
     width: 100%;
     height: auto;
     background-color: aqua;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
-nav h1 {
-    font-size: 3rem;
+header nav h1 {
+    font-size: 4rem;
     font-weight: bold;
     color: #013256;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
-.navigation-container  {
-    display:flex;
+header nav ul {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
+    
 
-.navigation-container ul li {
+header nav ul li {
     list-style: none;
-    display: inline-block;
     padding: 10px;
     margin: 8px;
+    margin-top: 40px;
     border: 2px solid #013256;
     border-radius: 5px;
     color: #013256;
@@ -48,93 +52,131 @@ nav h1 {
     cursor: pointer;
 }
 
-.calc-container {
+.card-container {
     display: flex;
+    flex-direction: column;
+    height: auto;
     background-color: aqua;
     margin-top: 20px;
-    height: auto;
     border-radius: 5px;
+}
+
+.card-header {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.calc-container h2 {
-    font-size: 2.3rem;
+    
+
+.card-header h2 {
+    font-size: 3rem;
     color: #013256;
-    text-align: center;
     font-weight: bold;
     padding-top: 10px;
 }
+    
 
-.calc-container .calc-box {
+.card-header .square  {
     background: #013256;
     width: 100px;
     height: 100px;
-    margin-top: 20px;
+    margin: 10px;
 }
 
-.calc-container .calc-circle {
-    background: #013256;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 20px;
-}
-
-.calc-container .calc-triangle {
+.card-container .triangle {
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 100px solid #013256;
-    margin-top: 20px;
+    margin: 10px;
 }
 
-.form-container {
-    
-    padding: 20px;
+.card-container .circle {
+    background: #013256;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
-
-.form-container-form {
+   
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
+}
+   
+input {
+    border: 2px solid #013256;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 300px;
 }
 
-
-.form-container .form-container-input {
-    border: 4px solid #013256;
+button {
+    border: 2px solid #013256;
     background: none;
     border-radius: 10px;
+    width: 300px;
     padding: 10px;
     margin: 10px;
-    width: 300px;
-
-   
-}
-
-.form-container .form-container-button {
-    border: 4px solid #013256;
-    background: none;
-    border-radius: 10px;
-    width: 300px;
-    padding: 10px;
     cursor: pointer;
 }
 
 .results {
-    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #013256;
     padding: 10px;
+    margin: 10px 10px 20px ;
     border-radius: 10px;
 }
+    
+
 
 .results h3 {
     font-weight: 600;
     font-size: 1.6rem;
+    color: #013256;
 }
+
+footer {
+    margin: 2rem 2rem;
+    text-align: center;
+    color: aqua;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
     
     
    

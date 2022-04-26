@@ -1,83 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathGeo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <nav class="app-navigation">
-            <h1>MathGeo</h1>
-            <span class="navigation-container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MathGeo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>MathGeo</h1>
+               
                 <ul>
                     <li>Cuadrado</li>
                     <li>Triangulo</li>
                     <li>Circulo</li>
                 </ul>
-            </span>
-        </nav>
-    </header>
-    <main>
-        <!-- Cuadrado -->
-        <section class="calc-container">
-            <figure class="calc-box"></figure>
-            <h2>Cuadrado</h2>
-            <section class="form-container">
-                <form class="form-container-form" action="">
-                    <input placeholder="Introduce un lado" id="ladocuadrado" class="form-container-input" type="number">
-                    <button type="button" onclick="calcularCuadrado()" class="form-container-button"
-                        type="button">Calcular</button>
+            </nav>
+        </header>
+        <main>
+            <!-- Cuadrado -->
+            <section class="card-container">
+                <div class="card-header">
+                    <h2>Cuadrado</h2>
+                    <div class="square"></div>
+                </div>
+                <form action="#" method="post" accept-charset="utf-8">
+                    <input placeholder="Introduce un lado:" id="ladocuadrado" type="number" value="" required>
+                    <button type="button" onclick="calcularCuadrado()" type="button">Calcular</button>
                 </form>
                 <div class="results">
                     <h3>Perímetro: <span id="perimetroCuadrado" class="results-value"></span></h3>
                     <h3>Area: <span id="areaCuadrado" class="results-value"></span></h3>
                 </div>
             </section>
+            
+            <!-- Triangulo -->
+            <section class="card-container">
+                <div class="card-header">
+                    <h2>Triangulo</h2>
+                    <div class="triangle"></div>
+                </div>
+                <form action="#" method="post" accept-charset="utf-8">
+                    <input placeholder="Introduce el lado uno:" type="number" name="lado1" id="lado1" value="" required />
+                    <input placeholder="Introduce el lado dos:" type="number" name="lado2" id="lado2" value="" required />
+                    <input placeholder="Introduce la base:" type="number" name="base" id="base" value="" required />
+                    <input placeholder="Introduce la altura:" type="number" name="altura" id="altura" value="" required />
+                    <button type="button" onclick="calcularTriangulo()">Calcular</button>
+                </form>
+                <div class="results">
+                    <h3>Perímetro: <span id="perimetroTriangulo" class="results-value"></span></h3>
+                    <h3>Area: <span id="areaTriangulo" class="results-value"></span></h3>
+                </div>
             </section>
+
+            <!-- Circulo -->
+            <section class="card-container">
+            <div class="card-header">
+                <h2>Circulo</h2>
+                <div class="circle"></div>
+            </div>
+                    <form action="#" method="post" accept-charset="utf-8">
+                    <input placeholder="Introduce el radio:" type="number" name="radio" id="radio" value="" />
+                    <button type="button" onclick="calcularCirculo()">Calcular</button>
+                    </form>
+                    <div class="results">
+                        <h3>Perímetro: <span id="perimetroCirculo" class="results-value"></span></h3>
+                        <h3>Area: <span id="areaCirculo" class="results-value"></span></h3>
+                    </div>
+                </section>
+            </section>
+    
+    
+    
+        </main>
+        <script src="./index.js"></script>
+        <footer>
+            <span>
+                Made with 💚 by codekid
+            </span>
+    </body>
+    
+    </html>
+
+    
+    
+
+            
+
+         
                    
                     
-        <!-- Triangulo -->
-        <section class="calc-container">
-            <figure class="calc-triangle"></figure>
-            <h2>Triangulo</h2>
-            <section class="form-container">
-                <form action="">
-                    <input id="Cuadrado" class="form-container-input" type="number">
-                    <button type="button" onclick="calcularPerimetroCuadrado()" class="form-container-button"
-                        type="button">Perimetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()" class="form-container-button"
-                        type="button">Área</button>
-                </form>
-            </section>
-        </section>
-        <!-- Circulo -->
-        <section class="calc-container">
-            <figure class="calc-circle"></figure>
-            <h2>Circulo</h2>
-            <section class="form-container">
-                <form action="">
-                    <input id="InputCuadrado" class="form-container-input" type="number">
-                    <button type="button" onclick="calcularPerimetroCuadrado()" class="form-container-button"
-                        type="button">Perimetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()" class="form-container-button"
-                        type="button">Área</button>
-                </form>
-            </section>
-        </section>
+            
+            
+                
+                    
+                    
+                    
 
 
-
-    </main>
-    <script src="./index.js"></script>
-</body>
-
-</html>
+                    
